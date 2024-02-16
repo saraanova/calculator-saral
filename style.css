@@ -1,35 +1,36 @@
-*{
+ *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 body{
-    background-color: aqua;
-}
-.container{
-    width: 100%;
+    background-color: rgb(1, 26, 26);
+    width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .calculator{
     background-color: palevioletred;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .calculator form input{
     border: 0;
     outline: 0;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
-    box-shadow: -8px -8px 15px rgba(50,204,145),5px 5px 15px rgba(255,255,25);
+    box-shadow: -4px -4px 1px rgba(50,204,145),2px 2px 1px rgba(255,255,25);
     background: transparent;
     font-size: 20px;
-    color: rgb(32, 24, 7);
+    font-weight: bolder;
+    color: #fae20d;
     cursor: pointer;
     margin: 10px;
 }
@@ -49,3 +50,13 @@ form .disply input{
 form input.equal{
     width:180px;
 }
+@media (max-width: 0px) 
+{
+    .calculator{
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+  
+}
+

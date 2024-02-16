@@ -14,4 +14,5 @@ function calculator(){
 function del() {
     let dis=document.getElementById("display").value;
     document.getElementById("display").value= dis.substring(0, dis.length -1);
-}
+}  
+
